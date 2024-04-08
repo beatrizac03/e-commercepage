@@ -25,10 +25,17 @@
     --smallest: calc((var(--base-size)) / (var(--scale)));
 }
 
-body {
+body, button {
     overflow-x: hidden;
     font-family: "Kumbh Sans", sans-serif;
     margin: 0;
+}
+
+/* multiseletor  */
+
+.sign-add, .sign-remove, .p-mainimg  {
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* header  */
@@ -129,6 +136,7 @@ section.sect-contproduct {
 .product-images {
     width: 45%;
     background-color: brown;
+    padding: 1rem;
 }
 
 .product-info {
@@ -147,7 +155,37 @@ section.sect-contproduct {
     flex-direction: column;
 }
 
+.cont-prodimgs {
+    height: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* imagens do produto */
+
+.p-mainimg {
+    width: 85%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url(assets/images/image-product-1.jpg);
+    background-size: cover;
+}
+
+.p-secimgs {
+    width: 85%;
+    height: 15%;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.p-eachsecimg {
+    width: 20%;
+}
+
 
 /* conteudo do produto */
 .titlename-productinfo {
@@ -182,6 +220,7 @@ section.sect-contproduct {
 .product-price {
     border: 2px solid red;
     width: 40%;
+    margin-bottom: 30px;
 }
 
 .p-pricemain {
@@ -205,4 +244,50 @@ section.sect-contproduct {
     display: flex;
     align-items: center;
     padding-left: 0.5rem;
+}
+
+.produc-cartquantity {
+    width: 100%;
+    border: 1px solid red;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-itemquantity {
+    width: 30%;
+    height: 65%;
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--light-grayishblue);
+}
+
+
+
+.sign-add {
+    background-image: url(assets/images/icon-plus.svg);
+}
+
+.sign-remove {
+    background-image: url(assets/images/icon-minus.svg);
+}
+
+.qtity-sign {
+    width: 30%;
+}
+
+.number-qtity {
+    width: 40%;
+}
+
+.produc-cartquantity button{
+    width: 60%;
+    height: 75%;
+    background-color: var(--orange-primary);
+    border-radius: 10px;
+    border: none;
+    color: var(--white);
+    font-size: var(--smallest);
+    font-weight: 500;
 }
