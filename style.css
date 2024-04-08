@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange-primary: hsl(26, 100%, 55%);
+    --pale-orange:  hsl(25, 100%, 94%);
+    --dark-blue: hsl(220, 13%, 13%);
+    --dark-grayishblue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayishblue: hsl(220, 14%, 75%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+
+    --base-size: 1.2rem;
+    --scale: 1.25;
+    --xxl: calc(var(--xl) * var(--scale));
+    --xl: calc(var(--large) * var(--scale));
+    --large: calc(var(--medium) * var(--scale));
+    --medium: calc(var(--regular) * var(--scale));
+    --regular: calc(var(--small) * var(--scale));
+    --small: calc(var(--smallest) * var(--scale));
+    --smallest: calc((var(--base-size)) / (var(--scale)));
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Kumbh Sans", sans-serif;
+    margin: 0;
+}
+
+/* header  */
+
+header {
+    width: 100vw;
+    height: 80px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    border: 1px solid brown;
+    justify-content: space-between;
+    position: relative;
+}
+
+.c-logolinks {
+    width: 40%;
+    display: flex;
+}
+
+.logo-wrapper {
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+    background-image: url(assets/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header-page ul {
+    display: flex;
+    list-style: none;
+    border: 1px solid red;
+    align-items: center;
+    width: 75%;
+    justify-content: space-around;
+}
+
+.c-profile {
+    border: 1px solid blue;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carticon-wrapper {
+    width: 40%;
+    border: 1px solid orange;
+    background-image: url(assets/images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imageprofile-wrapper {
+    width: 40%;
+    border: 1px solid black;
+    background-image: url(assets/images/image-avatar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.line-dashdiv {
+    content: "";
+    width: 90%;
+    margin: 2rem auto;
+    border-bottom: 1.5px solid black;
+    left: 0;
+}
+
+
+/* container do produto */
+
+section.sect-contproduct {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    height: 80vh;
+}
+
+.containerall-div {
+    padding: 1rem;
+    width: 80%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-images {
+    width: 45%;
+    background-color: brown;
+}
+
+.product-info {
+    width: 50%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-prodinfo {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* imagens do produto */
+
+/* conteudo do produto */
+.titlename-productinfo {
+    width: 80%;
+    height: 120px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.titlename-productinfo span {
+    color: var(--orange-primary);
+    font-weight: 700;
+}
+
+.titlename-productinfo p {
+    color: var(--black);
+    font-weight: 700;
+    font-size: var(--large);
+}
+
+.product-textdesc {
+    border: 1px solid brown;
+    margin-bottom: 20px;
+}
+
+.product-textdesc p {
+    font-size: var(--small);
+    color: var(--dark-grayishblue);
+    font-weight: 400;
+}
+
+.product-price {
+    border: 2px solid red;
+    width: 40%;
+}
+
+.p-pricemain {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.p-pricemain span:first-child {
+    font-size: var(--medium);
+    font-weight: 700;
+}
+
+.p-pricemain span:last-child {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(248, 202, 112);
+    border-radius: 10px;
+    color: var(--orange-primary);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
