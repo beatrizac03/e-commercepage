@@ -77,10 +77,12 @@ nav {
     align-items: center;
     width: 75%;
     justify-content: space-around;
+    margin: 0;
 }
 
 .header-page ul li a {
     text-decoration: none;
+    color: var(--dark-grayishblue);
 }
 
 .c-profile {
@@ -339,6 +341,10 @@ section.sect-contproduct {
     background-image: url(assets/images/image-product-4.jpg);
 }
 
+.hidden {
+    display: none;
+}
+
 @media screen and (max-width: 800px){
     .containerall-div {
         flex-direction: column;
@@ -387,5 +393,36 @@ section.sect-contproduct {
     }
     .produc-cartquantity {
         height: 66px;
+    }
+
+    header {
+        height: 40px;
+    }
+
+    .ul-headerlinks {
+        display: none !important;
+    }
+
+    .c-logolinks {
+        width: 60%;
+    }
+
+    .logo-wrapper {
+        width: 40%;
+    }
+
+    .c-profile {
+        width: 25%;
+    }
+
+    .btn-sidebar {
+        width: 20%;
+    }
+
+
+
+
+    .btn-sidebar {
+        display: block;
     }
 }
