@@ -417,12 +417,14 @@ section.sect-contproduct {
 
     .btn-sidebar {
         width: 20%;
+        border: none;
+        background-color: white;
+        padding: 0;
+        display: block;
     }
 
-
-
-
-    .btn-sidebar {
-        display: block;
+    .btn-sidebar i {
+        color: var(--black);
+        font-size: 1.5rem;
     }
 }
