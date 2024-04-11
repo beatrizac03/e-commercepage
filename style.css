@@ -151,7 +151,7 @@ section.sect-contproduct {
 
 .cont-prodinfo {
     width: 90%;
-    height: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -405,10 +405,11 @@ section.sect-contproduct {
 
     .c-logolinks {
         width: 60%;
+        justify-content: flex-start;
     }
 
     .logo-wrapper {
-        width: 40%;
+        width: 50%;
     }
 
     .c-profile {
@@ -426,5 +427,17 @@ section.sect-contproduct {
     .btn-sidebar i {
         color: var(--black);
         font-size: 1.5rem;
+    }
+
+    .offcanvas-bootstrap-ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .offcanvas {
+        width: 60%;
     }
 }
